@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>svg矢量图</title>
+</head>
+<body>
+    <!-- 线框矩形 -->
+    <svg width="500" height="500" style="background-color: cadetblue;">
+        <rect x="20" y="20" width="50" height="50" stroke="red" fill="none">
+    </svg>
+    <!-- 白色填充矩形 -->
+    <svg width="500" height="500" style="background-color: cadetblue;">
+        <rect x="100" y="20" width="50" height="50" stroke="red" fill="white">
+    </svg>
+    <!-- 边框为2px的填充矩形 -->
+    <svg width="500" height="500" style="background-color: cadetblue;">
+        <rect x="20" y="100" width="50" height="50" stroke="red" fill="white" stroke-width="2px">
+    </svg>
+
+    <!-- 直线 -->
+    <svg>
+        <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+    </svg>
+
+    <!-- 绘制文本 -->
+    <svg>
+        <text x="0" y="10" fill="red">我来了！这个美好的世界！</text>
+    </svg>
+
+    <!-- 圆 -->
+    <svg>
+        <circle cx="80" cy="80" r="50" fill="red" />
+     </svg>
+
+    <!-- 正三角形 -->
+    <svg  height="400" width="400">
+        <polygon points="60,20 20,89.3 100,89.3"
+        style="fill:lime;stroke:purple;stroke-width:1"/>
+    </svg>
+</body>
+</html>

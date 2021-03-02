@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业</title>
+</head>
+<body>
+    <!-- 普通按钮  也是默认类型按钮-->
+    <button type="button">普通按钮</button>
+    <!-- 重置按钮 -->
+    <button type="reset">重置按钮</button>
+    <!-- 提交按钮 -->
+    <button type="submit">提交按钮</button>
+    <!-- 图像按钮 -->
+    <button type="button">图像按钮</button>
+
+
+
+    <form action="http://www.baidu.com">
+        <input type="text">
+        <button type="reset">重置按钮</button>
+    </form>
+
+
+    <!-- 本地日期选择器 -->
+    <input type="datetime-local" value="2021-01-18T18:50">
+
+    <!-- 滑块选择器，最小值为30，最大值为120，步进为5 -->
+    <input type="range" min="30" max="120" step="5">
+
+    <!-- 快速录入信息 -->
+    姓名：<input type="text" list="student">
+    <datalist id="student">
+    <option value="张三">zhangsan</option>
+    <option value="李四">lisi</option>
+    <option value="王二麻子">maziwang</option>
+    </datalist>
+
+    <!-- 进度条标签，max为最大值属性，value为默认值属性 -->
+    <progress max="120" value="100"></progress>
+
+
+    <form>
+        <!-- 表单控件分组标签fieldset -->
+        <fieldset>
+            <!-- 表单控件分组标题标签legend -->
+          <legend>学生信息:</legend>
+          姓名: <input type="text"><br>
+          年龄: <input type="text"><br>
+          学号: <input type="text">
+        </fieldset>
+    </form>
+
+
+    <!-- label标签可以使点击事件触发控件的范围更广 -->
+    <!-- label的第一种用法 -->
+    <label>
+        <input type="radio" name="student">王明
+    </label>
+    <label>
+        <input type="radio" name="student">熊浩
+    </label>
+    <!-- label的第二种用法 -->
+    <label for="box">学号：</label>
+    <input type="text" id="box">
+
+
+    <!-- video标签的自动播放属性autoplay需要和静音属性muted搭配使用才有效 -->
+    <video src="videos/a.mp4" autoplay muted></video>
+
+    <!-------- html5新增表单标签 ------->
+    <!-- 搜索输入文本框 -->
+    <input type="search">
+    <button>提交</button>
+    <!-- 邮件输入文本框 -->
+    <input type="email">
+    <button>提交</button>
+    <!-- 数字输入文本框 -->
+    <input type="number" min="10" max="50" step="2" value="20">
+    <!-- 电话输入文本框 -->
+    <input type="tel">
+    <button>提交</button>
+    <!-- 网址输入文本框 -->
+    <input type="url" required>
+    <!-- 颜色选择器 -->
+    <input type="color" value="#fff000">
+    <!-- 滑块选择器 -->
+    <input type="range">
+    <!-- 日期选择器 -->
+    <input type="date">
+    <!-- 本地日期选择器 -->
+    <input type="datetime-local">
+    <!-- 月份选择器 -->
+    <input type="month">
+    <!-- 周期选择器 -->
+    <input type="week">
+    <!-- 进度条 -->
+    <progress value="50" max="100"></progress>
+    <!-- 时间选择器 -->
+    <input type="time">
+    <!-- 预先定义列表选择器 -->
+    <input type="text" list="h2">
+    <datalist id="h2">
+        <option value="1">2</option>
+    </datalist>
+
+    <!-------- html5新增的标签 --------->
+    <!-- 头部 -->
+    <header></header>
+    <!-- 底部 -->
+    <footer></footer>
+    <!-- 侧边栏 -->
+    <aside></aside>
+    <!-- 主体 -->
+    <main></main>
+    <!-- 导航 -->
+    <nav></nav>
+    <!-- 菜单 -->
+    <menu></menu>
+    <!-- 子菜单 -->
+    <menuitem></menuitem>
+    <!-- 文章 -->
+    <article></article>
+    <!-- 标题组 -->
+    <hgroup></hgroup>
+    <!-- 文档节 -->
+    <section></section>
+    <!-- 图文混排 -->
+    <figure></figure>
+    <!-- 图文混排标题 -->
+    <figcaption></figcaption>
+    <!-- 会话框 -->
+    <dialog></dialog>
+    <!-- 详情 -->
+    <details></details>
+    <!-------- 新增属性 ------->
+    <form action="">
+        <!-- 文本框必填属性 -->
+        <input type="text" required>
+        <!-- 文本框的自动完成属性，属性值有on/off（默认）/off，需要和name搭配 -->
+        <input type="text" autocomplete="on" name="user">
+        <!-- 文本框自动获取光标 -->
+        <input type="text" autofocus>
+        <!-- 设置文本框的输入范围 -->
+        <input type="text" pattern="[0-9a-zA-Z]">
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码文本框</title>
+</head>
+<body>
+    <form action="http://www.baidu.com" method="POST">
+        <!-- 文本框类型 -->
+        <input type="password">
+        <!-- 文本框长度 -->
+        <input type="password" size="5">
+        <!-- 文本框的最大字符输入长度限制 -->
+        <input type="password" maxlength="5">
+        <!-- 文本框占位提示符 -->
+        <input type="password" placeholder="请输入你的信息">
+        <!-- 文本框的输入值 -->
+        <input type="password" value="银标">
+        <!-- 文本框禁用 -->
+        <input type="password" disabled>
+        <!-- 文本框只能读取，不可填写 -->
+        <input type="password" readonly>
+        <!-- 文本框必填属性 -->
+        <input type="password" required>
+        <!-- 文本框输入记录 自动完成 on/off 需要设置该文本框的名字name -->
+        <input type="password" name="use" autocomplete="on">
+        <!-- 文本框刷新页面后自动设置获取得焦点 -->
+        <input type="password" autofocus>
+        <!-- 控制输入的范围 需要必填属性required-->
+        <input type="password" placeholder="请输入你的年龄" required pattern="[0-9a-zA-Z.-_]+">
+        <button>按钮</button>
+    </form>
+</body>
+</html>

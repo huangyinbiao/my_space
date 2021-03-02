@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <meta http-equiv="refresh" content="3 url=http://www.baidu.com">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(new Date());
+    </script>
+    <!-- 对齐方式：align -->
+    <!-- 居左对齐 -->
+    <p>居左对齐</p>
+    <!-- 居中对齐 -->
+    <p>居中对齐</p>
+    <!-- 居右对齐 -->
+    <p>居右对齐</p>
+    <!-- 两端对齐 -->
+    <p>两端对齐</p>
+
+    <!-- 外链地址 -->
+    <a href="http://www.163.com" target="_parent">超链接</a>
+    <!-- 文件地址 -->
+    <a href="#">关于</a><br>
+
+    <!-- 窗口跳转目标 -->
+    <a href="http://www.baidu.com" target="_self">当前窗口打开</a>
+    <a href="http://www.baidu.com" target="_blank">新窗口打开</a>
+    <a href="http://www.baidu.com" target="_parent">父窗口打开</a>
+    <a href="http://www.baidu.com" target="_top">顶级窗口打开</a>
+    <br>
+
+    <!-- 跳转链接引用小窗口 -->
+    <a href="http://www.163.com" target="a">网易</a> | <a href="http://www.baidu.com" target="b">百度</a>
+    <br>
+    <!-- 创建小窗口 -->
+    <iframe name="a" src="#" height="200px" width="200px"></iframe>
+    <iframe name="b" src="#" height="200px" width="200px"></iframe>
+
+    <a href="#a">首页</a> | <a href="#b">导航</a> | <a href="#c">位置</a>
+    <div id="a" style="width: 400px;height: 400px; background-color: blue;"></div>
+    <div id="b" style="width: 400px;height: 400px; background-color: burlywood;"></div>
+    <div id="c" style="width: 400px;height: 400px; background-color: crimson;"></div>
+
+    <img src="./images/3.png" usemap="#a">
+    <map name="a">
+      <area shape="rect" coords="0,0,75,75" href="http://www.baidu.com" target="_blank" alt="百度">
+      <area shape="circle" coords="120,30,25" href="http://www.163.com" target="_blank" alt="网易">
+    </map>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业</title>
+</head>
+<body>
+    <!-- 表单 -->
+    <form action="http://www.baidu.com">
+        <!-- 文本框的属性 -->
+        <input type="text">
+        <!-- 文本框的输入值，方便后台和js调用 -->
+        <input type="text" value="user">
+        <!-- 文本框的长度，不是px值 -->
+        <input type="text" size="5">
+        <!-- 文本框的最大输入字符 -->
+        <input type="text" maxlength="20">
+        <!-- 文本框占位提示符 -->
+        <input type="text" placeholder="请输入你的信息">
+        <!-- 文本框禁止属性 -->
+        <input type="text" disabled>
+        <!-- 文本框只能读取，不能写 -->
+        <input type="text" readonly>
+        <!-- 文本框必填属性 -->
+        <input type="text" required>
+        <!-- 文本框的自动完成属性，属性值有on/off（默认）/off，需要和name搭配 -->
+        <input type="text" autocomplete="on" name="user">
+        <!-- 文本框自动获取光标 -->
+        <input type="text" autofocus>
+        <!-- 设置文本框的输入范围 -->
+        <input type="text" pattern="[0-9a-zA-Z]">
+    </form>
+
+    <form action="">
+        <input type="radio" name="age">男
+        <input type="radio" name="age" checked>女
+        <input type="checkbox" name="like">跑步
+        <input type="checkbox" name="like">唱歌
+        <input type="checkbox" name="like" checked>跳舞
+        <input type="checkbox" name="like" checked>打游戏
+    </form>
+
+    <!-- H5新增的表单控件 -->
+    <form>
+        <!-- 邮件输入文本框 -->
+        <input type="email">
+        <!-- 搜索输入文本框 -->
+        <input type="search">
+        <!-- 数字输入文本框 -->
+        <input type="number">
+        <!-- 电话输入文本框 -->
+        <input type="tel">
+        <!-- 网址输入文本框 -->
+        <input type="url">
+        <!-- 颜色选择框 -->
+        <input type="color">
+        <!-- 日期选择框 -->
+        <input type="date">
+    </form>
+
+    <form>
+       <textarea name="访客评论框" cols="30" rows="10" maxlength="60"></textarea>
+    </form>
+
+
+    <form name="表单" autocomplete="on">
+        <input type="text" placeholder="请输入">
+        <input type="password">
+        <input type="number">
+    </form>
+
+    <form>
+        <!-- 自动获取刷新页面的光标 -->
+        <input type="text" autofocus>
+        <input type="password">
+        <input type="text">
+        <input type="password">
+    </form>
+
+    <form>
+        <!-- 文件框的名字name，文件框的文件格式设置accept，文件框的多选设置multiple，文件框的属性设置value -->
+        <input name="user" value="1" type="file" accept="[0-9a-zA-Z]" multiple>
+    </form>
+
+
+
+
+    <!-- 输入性控件 -->
+    <!-- 单行输入文本框 -->
+    <input type="text">
+    <!-- 密码输入文本框 -->
+    <input type="password">
+    <!-- 多行输入文本框 -->
+    <textarea name="user" cols="30" rows="10"></textarea>
+    <!-- 邮件输入文本框 -->
+    <input type="email">
+    <!-- 搜索输入文本框 -->
+    <input type="search">
+    <!-- 数字输入文本框 -->
+    <input type="number">
+    <!-- 电话输入文本框 -->
+    <input type="tel">
+    <!-- 网址输入文本框 -->
+
+    <!-- 选择性控件 -->
+    <!-- 上传文件框 -->
+    <input type="file">
+    <!-- 单选框 -->
+    <input type="radio">
+    <!-- 多选框 -->
+    <input type="checkbox">
+    <!-- 颜色选择框 -->
+    <input type="color">
+    <!-- 日期选择框 -->
+    <input type="date">
+    <!-- 下拉列表框 -->
+    <select>
+        <option>上海</option>
+        <option>北京</option>
+    </select>
+
+ 
+    <form>
+        <input type="checkbox" name="1">上海
+        <input type="checkbox" name="1">北京
+        <input type="checkbox" name="1">天津
+
+        <select multiple>
+            <option>上海</option>
+            <option>北京</option>
+            <option>天津</option>
+        </select>
+    </form>
+
+    <!-- 下拉列表框 -->
+    <!-- 单选下拉框 -->
+    <select>
+        <option></option>
+        <option></option>
+    </select>
+    <!-- 多选下拉框 -->
+    <select multiple size="3">
+        <option>请选择</option>
+        <optgroup label="去过">
+            <option>南昌</option>
+            <option>抚州</option>
+        </optgroup>
+        <optgroup label="未去过">
+            <option>赣州</option>
+            <option>九江</option>
+            <option>上饶</option>
+    </select>
+
+    <form>
+        <!-- 文件名设置 -->
+        <input type="file" name="user">
+        <!-- 文件属性设置 -->
+        <input type="file" value="1">
+        <!-- 文件选择格式设置 -->
+        <input type="file" type="file" accept="image/jpeg,image/png">
+        <!-- 可以上传文件夹 -->
+        <input type="file" webkitdirectory>
+        <!-- 可以选择多个文件上传 -->
+        <input type="file" multiple>
+        <!-- 上传文件失效 -->
+        <input type="file" disabled>
+    </form>
+
+    <!-- 下拉框默认值 -->
+    <select>
+        <option selected></option>
+    </select>
+    <!-- 单选框默认值 -->
+    <input type="radio" checked>
+    <!-- 多选框默认值 -->
+    <input type="checkbox" checked>
+    <!-- 单行输入文本框默认值 -->
+    <input type="text" value="1">
+    <!-- 多行输入文本框默认值 -->
+    <textarea value="2" cols="30" rows="10"></textarea>
+
+    <!-- 颜色选择器默认值 注意：这个颜色只支持16进制的颜色 -->
+    <input type="color" value="#fff000">
+    <!-- 日期选择器默认值 注意：时间的年、日和月中间要用-隔开，月和日要用两位数表示，如果是一位数就在前面补个0-->
+    <input type="date" value="2021-01-15">
+</body>
+</html>

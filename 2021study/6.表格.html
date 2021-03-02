@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格</title>
+</head>
+<body>
+    <table width="200" border="1" cellspacing="0" align="center">
+        <caption>学生信息表</caption>
+        <tr height="75" bgcolor="rgb(204,204,204)">
+            <th>学号</th>
+            <th>姓名</th>
+        </tr>
+        <tr valign="top" height="50">
+            <th>2017101852</th>
+            <th>银标</th>
+        </tr>
+        <tr valign="middle" height="50">
+            <th>2017101859</th>
+            <th>志远</th>
+        </tr>
+        <tr valign="bottom" height="50">
+            <th>2017101841</th>
+            <th>王明</th>
+        </tr>
+    </table> 
+
+    <br>
+    <br>
+
+    <table border="1" cellspacing="0" cellpadding="10" align="center">
+        <tr>
+            <th>姓名</th>
+            <th>学号</th>
+            <th>得分</th>
+        </tr>
+        <tr>
+            <th colspan="2">银标</th>
+            <!-- <th>2017101852</th> -->
+            <th rowspan="2">81</th>
+        </tr>
+        <tr>
+            <th>银标</th>
+            <th>2017101852</th>
+            <!-- <th>81</th> -->
+        </tr>
+    </table>
+</body>
+</html>

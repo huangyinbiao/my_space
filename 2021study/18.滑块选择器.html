@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滑块选择器</title>
+</head>
+<body>
+    <!-- 滑块选择器 默认最小值为0，最大值为100，默认步进为1 -->
+    <input id="range" type="range" min="50" max="300" step="0.5" value="60" oninput="change(this)">
+ 
+    <h1 id="h1"></h1>
+
+
+    <script>
+        document.getElementById('h1').innerText = document.getElementById('range').value;
+
+        function change (input){
+            document.getElementById('h1').innerText = input.value;
+
+        } 
+    </script>
+</body>
+</html>

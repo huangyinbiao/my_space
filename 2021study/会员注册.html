@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <table border="0" align="center" cellspacing="1" width="800" bgcolor="#DEE1E6" height="650">
+            <thead bgcolor="#EBEBEB">
+                <tr>
+                    <th colspan="2"><h2>会员注册</h2></th>
+                </tr>
+            </thead>
+            <tbody bgcolor="#fff">
+                <tr>
+                    <th align="right">账号*&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;<input type="text" required pattern="[\dA-Za-z]{3,5}">&nbsp;请输入3-5位字母或数字</td>
+                </tr>
+                <tr>
+                    <th align="right">密码*&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;<input type="password" required pattern="\S{6,}">&nbsp;密码至少6位数</td>
+                </tr>
+                <tr>
+                    <th align="right">确认密码*&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;<input type="password">&nbsp;请重复输入上面的密码</td>
+                </tr>
+                <tr>
+                    <th align="right">邮箱*&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;<input type="email"></td>
+                </tr>
+                <tr>
+                    <th align="right">真实姓名* &nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;<input type="text"></td>
+                </tr>
+                <tr>
+                    <th align="right">性别*&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;<input type="radio" name="sex" value="boy"> 男&nbsp;&nbsp;
+                        <input type="radio" name="sex" value="girl"> 女</td>
+                </tr>
+                <tr>
+                    <th align="right">出生日期*&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;<input type="date"></td>
+                </tr>
+                <tr>
+                    <th align="right">学历*&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;
+                        <select name="deuction" id="">
+                            <option value="0">请选择</option>
+                            <option value="1">小学</option>
+                            <option value="2">中学</option>
+                            <option value="3">大专</option>
+                            <option value="4">本科</option>
+                            <option value="5">硕士</option>
+                            <option value="6">文盲</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="right">爱好*&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;
+                        <input type="checkbox" name="hobby" value="0"> 篮球&nbsp;
+                        <input type="checkbox" name="hobby" value="1"> 足球&nbsp;
+                        <input type="checkbox" name="hobby" value="2"> 排球&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <th align="right">备注&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;<textarea name="remarks" id="" cols="30" rows="5"></textarea></td>
+                </tr>
+            </tbody>
+            <tfoot align="center" bgcolor="#EBEBEB">
+                <tr height="80">
+                    <td colspan="2">
+                        <input type="checkbox" checked><span>我已看过并同意</span><br><br>
+                        <input type="submit" value="免费注册">
+                        <input type="reset" value="重置">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>
